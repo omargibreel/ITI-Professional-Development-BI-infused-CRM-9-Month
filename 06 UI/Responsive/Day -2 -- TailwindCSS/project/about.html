@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="container w-[95%] mx-auto flex">
+        <div class="navbar-start">
+          <div class="dropdown lg:hidden flex">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="flex gap-5">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-5">
+          <button class="btn px-5 hover:bg-gray-100">Login</button>
+          <button class="btn px-5 bg-gray-500 hover:bg-gray-600 text-white">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="story">
+      <div
+        class="container w-[95%] mx-auto py-10 grid lg:grid-cols-2 items-center"
+      >
+        <div class="content flex flex-col gap-10">
+          <h2 class="text-4xl font-bold">Our Story</h2>
+          <p class="text-lg">
+            Welcome to La Bella, where culinary excellence meets a warm and
+            inviting atmosphere. Established in 1990, we have been serving
+            delectable dishes crafted from the freshest ingredients for over
+            three decades. Our menu features a fusion of traditional and modern
+            flavors, designed to tantalize your taste buds.
+          </p>
+
+          <h2 class="text-4xl font-bold">Our Mission</h2>
+          <p>
+            To provide an exceptional dining experience that celebrates the rich
+            culinary heritage of Italy while embracing innovation and
+            sustainability. We are committed to using locally sourced, fresh
+            ingredients and supporting our community.
+          </p>
+          <div
+            class="items bg-gray-200 flex w-[60%] md:w-[50%] justify-between p-5 rounded-lg"
+          >
+            <div class="item flex flex-start flex-col">
+              <p class="text-xs">Years of Services</p>
+              <h3 class="font-black text-3xl">30+</h3>
+            </div>
+            <div class="item">
+              <p class="text-xs">Happy Customers</p>
+              <h3 class="font-black text-3xl">50+</h3>
+            </div>
+            <div class="item">
+              <p class="text-xs">Dishes Served</p>
+              <h3 class="font-black text-3xl">100+</h3>
+            </div>
+          </div>
+        </div>
+        <div class="image flex mx-auto lg:ms-auto bg-red-600 h-[80%]">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=800&fit=crop"
+            alt="Restaurant Image"
+            class="rounded-lg shadow-lg object-cover"
+          />
+        </div>
+      </div>
+    </div>
+    <footer class="bg-gray-100">
+      <div
+        class="container w-[95%] mx-auto py-10 grid md:grid-cols-3 items-center gap-10 text-center"
+      >
+        <div class="md:text-left">
+          <p>🍽️ La Bella Restaurant</p>
+          <p>Serving delicious meals since 1990</p>
+        </div>
+
+        <div class="flex justify-center items-center gap-8">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <div class="md:text-right">
+          <p>&copy; 2024 daisyUI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

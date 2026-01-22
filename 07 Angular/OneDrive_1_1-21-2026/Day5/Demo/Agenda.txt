@@ -1,0 +1,9 @@
+1- Validation [Built-in Directives vs control Flow]
+2-Concept [Component Interaction] ===> Problem ==> solve [Component Life Cycle]
+4-Validators
+
+Day5
+1-Routing
+2-Pipes -> built-in => custom
+3-Directives -> built-in => custom
+4-call API

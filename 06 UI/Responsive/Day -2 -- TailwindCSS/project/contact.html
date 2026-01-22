@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="container w-[95%] mx-auto flex">
+        <div class="navbar-start">
+          <div class="dropdown lg:hidden flex">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="flex gap-5">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-5">
+          <button class="btn px-5 hover:bg-gray-100">Login</button>
+          <button class="btn px-5 bg-gray-500 hover:bg-gray-600 text-white">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="py-16 px-4">
+      <div class="container mx-auto max-w-4xl">
+        <div class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
+          <p class="text-lg">
+            Have a question or want to make a reservation? Get in touch with us!
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div class="card bg-base-200 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title text-2xl mb-6">Send us a Message</h2>
+              <fieldset class="fieldset space-y-4">
+                <label class="label">Name</label>
+                <input
+                  type="text"
+                  class="input input-bordered w-full"
+                  placeholder="Enter your name"
+                  required
+                />
+
+                <label class="label">Email</label>
+                <input
+                  type="email"
+                  class="input input-bordered w-full"
+                  placeholder="Enter your email"
+                  required
+                />
+
+                <label class="label">Phone</label>
+                <input
+                  type="tel"
+                  class="input input-bordered w-full"
+                  placeholder="Enter your phone number"
+                />
+
+                <label class="label">Message</label>
+                <textarea
+                  class="textarea textarea-bordered w-full h-32"
+                  placeholder="Type your message here..."
+                ></textarea>
+
+                <button class="btn btn-primary w-full mt-4">
+                  Send Message
+                </button>
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <div class="card bg-base-200">
+              <div class="card-body">
+                <h3 class="card-title flex items-center gap-2">
+                  <i class="fa-solid fa-location-dot"></i> Address
+                </h3>
+                <p class="text-base-content/70">
+                  123 Gourmet Street, Foodville, FV 12345
+                </p>
+              </div>
+            </div>
+
+            <div class="card bg-base-200">
+              <div class="card-body">
+                <h3 class="card-title flex items-center gap-2">
+                  <i class="fa-solid fa-phone"></i> Phone
+                </h3>
+                <p class="text-base-content/70">(555) 123-4567</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-200">
+              <div class="card-body">
+                <h3 class="card-title flex items-center gap-2">
+                  <i class="fa-solid fa-envelope"></i> Email
+                </h3>
+                <p class="text-base-content/70">info@labellarestaurant.com</p>
+              </div>
+            </div>
+
+            <div class="card bg-base-200">
+              <div class="card-body">
+                <h3 class="card-title flex items-center gap-2">
+                  <i class="fa-solid fa-clock"></i> Opening Hours
+                </h3>
+                <div class="text-base-content/70">
+                  <p>Monday - Friday: 11:00 AM - 10:00 PM</p>
+                  <p>Saturday - Sunday: 10:00 AM - 11:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-gray-100">
+      <div class="container w-[95%] mx-auto py-10 flex justify-between">
+        <div class="">
+          <p>🍽️ La Bella Restaurant</p>
+          <p>Serving delicious meals since 1990</p>
+        </div>
+        <div class="icons flex justify-center items-center">
+          <div>
+            <a href=""><i class="fa-brands fa-facebook fa-xl mx-2"></i></a>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-twitter fa-xl mx-2"></i></a>
+          </div>
+          <div>
+            <a href=""></a><i class="fa-brands fa-instagram fa-xl mx-2"></i>
+          </div>
+        </div>
+        <div>
+          <p>&copy; 2024 daisyUI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

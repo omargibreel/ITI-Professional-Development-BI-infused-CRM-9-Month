@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="container w-[95%] mx-auto flex">
+        <div class="navbar-start">
+          <div class="dropdown lg:hidden flex">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <a href="index.html" class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center lg:flex hidden">
+          <ul class="flex gap-5">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end flex gap-5">
+          <button class="btn px-5 hover:bg-gray-100">Login</button>
+          <button class="btn px-5 bg-gray-500 hover:bg-gray-600 text-white">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="main-section bg-base-300 py-10">
+      <div
+        class="container w-[95%] mx-auto flex flex-col items-center text-center gap-10 py-10"
+      >
+        <h1 class="text-3xl font-bold">Welcome to the Main Page</h1>
+        <p class="lg:w-[40%]">
+          Experience the finest Italian cuisine crafted with love and tradition.
+          Our chefs bring you authentic flavors from the heart of Italy to your
+          table.
+        </p>
+        <button class="btn px-5 bg-gray-500 hover:bg-gray-600 text-white mt-5">
+          reserve a table
+        </button>
+      </div>
+    </section>
+
+    <section class="services">
+      <div
+        class="container w-[95%] mx-auto flex flex-col items-center text-center gap-10 py-10"
+      >
+        <h2 class="text-2xl font-bold">Our Services</h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            class="card bg-base-100 shadow-md p-6 flex flex-col items-center text-center transition duration-300 hover:scale-105"
+          >
+            <div class="w-16 h-16 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-bowl-food text-yellow-400 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Dine-In</h3>
+            <p>Experience exquisite cuisine in an elegant atmosphere</p>
+          </div>
+
+          <div
+            class="card bg-base-100 shadow-md p-6 flex flex-col items-center text-center transition duration-300 hover:scale-105"
+          >
+            <div class="w-16 h-16 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-car text-yellow-400 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Home Delivery</h3>
+            <p>Enjoy our delicious meals delivered right to your doorstep</p>
+          </div>
+
+          <div
+            class="card bg-base-100 shadow-md p-6 flex flex-col items-center text-center transition duration-300 hover:scale-105"
+          >
+            <div class="w-16 h-16 flex items-center justify-center mb-4">
+              <i
+                class="fa-solid fa-bell-concierge text-yellow-400 text-2xl"
+              ></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Catering Services</h3>
+            <p>
+              Professional catering for weddings, parties, and corporate events
+            </p>
+          </div>
+
+          <div
+            class="card bg-base-100 shadow-md p-6 flex flex-col items-center text-center transition duration-300 hover:scale-105"
+          >
+            <div class="w-16 h-16 flex items-center justify-center mb-4">
+              <i class="fa-solid fa-calendar text-yellow-400 text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Private Events</h3>
+            <p>Host your special occasions with our dedicated event team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu bg-base-300 w-full">
+      <div
+        class="container w-[95%] mx-auto flex flex-col items-center text-center gap-10 py-10"
+      >
+        <h2 class="text-2xl font-bold">Our Menu</h2>
+        <p class="lg:w-[50%]">
+          Discover our carefully curated selection of dishes, prepared with the
+          freshest ingredients
+        </p>
+
+        <div
+          class="cards grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
+        >
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1601924582975-7aa1b5f7c0b1"
+                alt="Pizza"
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Margherita Pizza</h2>
+              <p>
+                Classic Italian pizza topped with fresh tomatoes, mozzarella
+                cheese, and basil leaves.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">
+                  $18.99
+                </div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1525755662778-989d0524087e"
+                alt="Pasta"
+                class="w-full h-full"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Creamy Alfredo Pasta</h2>
+              <p>
+                Rich and creamy Alfredo sauce tossed with perfectly cooked pasta
+                and parmesan cheese.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">
+                  $16.50
+                </div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+                alt="Salad"
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Fresh Garden Salad</h2>
+              <p>
+                A healthy mix of fresh vegetables, olive oil, and light lemon
+                dressing.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">
+                  $12.99
+                </div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe"
+                alt="Italian Salad"
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Italian Caesar Salad</h2>
+              <p>
+                Crispy lettuce, grilled chicken, parmesan cheese, and Caesar
+                dressing.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">
+                  $14.99
+                </div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1601924582975-7aa1b5f7c0b1"
+                alt="Pepperoni Pizza"
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Pepperoni Pizza</h2>
+              <p>
+                Loaded with spicy pepperoni slices and melted mozzarella cheese.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">
+                  $20.99
+                </div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-sm w-full">
+            <figure class="h-64 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3"
+                alt="Dessert"
+                class="w-full h-full object-cover"
+              />
+            </figure>
+            <div class="card-body text-start">
+              <h2 class="card-title">Chocolate Lava Cake</h2>
+              <p>
+                Warm chocolate cake with a rich molten center, served fresh.
+              </p>
+              <div class="card-actions justify-between mt-4">
+                <div class="price text-lg font-bold text-indigo-600">$9.50</div>
+                <div
+                  class="badge border border-indigo-400 shadow-lg shadow-indigo-200 px-5 py-3 hover:bg-indigo-100 cursor-pointer"
+                >
+                  Order now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-gray-100">
+      <div class="container w-[95%] mx-auto py-10 flex justify-between">
+        <div class="">
+          <p>🍽️ La Bella Restaurant</p>
+          <p>Serving delicious meals since 1990</p>
+        </div>
+        <div class="icons flex justify-center items-center">
+          <div>
+            <a href=""><i class="fa-brands fa-facebook fa-xl mx-2"></i></a>
+          </div>
+          <div>
+            <a href=""><i class="fa-brands fa-twitter fa-xl mx-2"></i></a>
+          </div>
+          <div>
+            <a href=""></a><i class="fa-brands fa-instagram fa-xl mx-2"></i>
+          </div>
+        </div>
+        <div>
+          <p>&copy; 2024 daisyUI. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

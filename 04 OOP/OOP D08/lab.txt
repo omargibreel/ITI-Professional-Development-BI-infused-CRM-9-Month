@@ -1,0 +1,26 @@
+/////////////////////////////////////////
+//lab assignments
+//1-Complex
+////cpy ctor [useless]
+////= operator [useless]
+////c1+c2
+////c1+10
+////c1+=c2
+////c1++
+////++c1
+////c1>c2
+
+//10+c1 [standalone]
+
+/////////////////////////////////
+//2- stack
+///cpy ctor [MUST]
+///=operator [MUST]
+///Stack Reverse(){}
+
+///bonus    s1==s2
+///bonus    s3=s1+s2;
+
+//3- composition   [draw abajora]
+
+//4-[bonus]   moving fan

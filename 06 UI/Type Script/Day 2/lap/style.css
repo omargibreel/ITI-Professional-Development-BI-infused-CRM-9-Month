@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background-color: #f1f5f8;
+}
+.container {
+}
+
+#counterValue {
+  color: #077a08;
+}
+
+button {
+  padding: 10px 20px;
+  margin-inline: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 10px;
+}
+button:hover {
+  border-color: #09c;
+}

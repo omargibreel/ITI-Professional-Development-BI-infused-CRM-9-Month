@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <form action="">
+        <input onblur="handleNameInput()" id="nameInput" type="text" placeholder="Enter Your Name" />
+        <span id="nameInputSpan" style="color: red;"></span>
+
+        <input onblur="handleAgeInput()" id="ageInput" type="text" placeholder="Enter Your Age" />
+        <span id="ageInputSapn" style="color: red;"></span>
+
+        <input onblur="handleEmailInput()" id="emailInput" type="email" placeholder="Enter Your Email" />
+        <span id="emailInputSapn" style="color: red;"></span>
+
+        <div>
+            <button type="submit" class="addButton">Add</button>
+            <button type="reset" class="resetButton">Rest</button>
+        </div>
+      </form>
+
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>E-mail</th>
+          </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1762176607 source:d:\_route\iti\04 oop\oop d02\lab2d2\lab2d2q3\main.cpp
+	<iostream>
+	<stdlib.h>
+	<windows.h>
+

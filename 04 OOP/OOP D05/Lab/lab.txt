@@ -1,0 +1,10 @@
+//Lab Assignments
+
+
+///1- try dynamic allocation
+// for pointer to integer read and write  2ways
+///2- try dynamic allocation for Array
+// of pointers to integers read and write
+//// int *arr[3] -> int arr[3][4]
+
+//3- int **ptrArr;

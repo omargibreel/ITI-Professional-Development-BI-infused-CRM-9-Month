@@ -1,0 +1,20 @@
+.users {
+  background-color: darkgrey;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+}
+.user {
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 5px;
+}
+.user.button {
+  cursor: pointer;
+  text-align: center;
+}
+.user button:hover {
+  background-color: red;
+  color: white;
+}

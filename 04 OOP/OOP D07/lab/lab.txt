@@ -1,0 +1,55 @@
+//OBSERVE
+//1-class Complex 
+//+  ctor()cout,ctor(,)cout,ctor(int)cout ,dest()cout
+///in main
+////Complex c1,c2,c3
+////pass values
+////c3=AddComplex(c1,c2); //pass by value
+//o/p
+//with observe -> NO static variable  with ur eyes
+//ctor
+//cotr
+//des
+//des
+//des
+//# of ctor != # of dest
+//Why -> tomorrow
+
+
+//OBSERVE with ur eyes
+//2-class Stack
+///int*arr,int size,int tos ,static counter
+///ctor() cout
+///ctor(size) cout
+///dest()  for loop -1 then delete [] arr then cout
+///push,pop ,isfull,isempty
+
+
+///ViewStack(Stack param)
+//as standalone and friend fn
+
+//in main write exactly
+//Stack s1(10);
+//push 4 or 6 times
+
+//ViewStack(s1); //runs successfully
+//ViewStack(s1); //fail 
+//Why? tomorrow isa
+
+//try to print counter
+
+
+//3-implement shift  queue
+//4-implement  circular queue
+
+
+
+
+
+
+
+
+
+
+
+

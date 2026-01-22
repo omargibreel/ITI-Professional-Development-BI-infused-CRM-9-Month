@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    "nav nav"
+    "aside section"
+    "footer footer";
+}
+
+nav {
+  padding-block: 10px;
+  grid-area: nav;
+  text-align: center;
+  background-color: rgb(30, 41, 59);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav button {
+  border: none;
+  background-color: rgb(56 188 247);
+  padding: 10px 20px;
+  margin-right: 20px;
+  padding: 10px 30px;
+  border-radius: 5px;
+}
+nav h3 {
+  border: none;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+aside {
+  padding-block: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  grid-area: aside;
+  background-color: rgb(241 244 249);
+}
+aside ul {
+  margin: a;
+  text-align: start;
+  list-style: none;
+  padding: 0;
+}
+aside ul li {
+  color: black;
+  margin-inline: auto;
+  margin-bottom: 10px;
+  padding-block: 10px;
+  border: transparent solid 1px;
+  border-radius: 3px;
+  background-color: rgb(225 232 240);
+  max-width: 200px;
+  padding-left: 10px;
+}
+
+footer {
+  padding: 30px;
+  grid-area: footer;
+  text-align: center;
+  background-color: #39455d;
+}
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  gap: 10px;
+  justify-content: center;
+}
+section .item {
+  color: black;
+  overflow: hidden;
+  width: 300px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+section .item .item-img img {
+  width: 100%;
+}
+section .item-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+section .item-content button {
+  border: none;
+  background-color: rgb(56 188 247);
+  border-radius: 5px;
+  padding: 10px 80px;
+}
+/* ///////////////////////////////////////////////// */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "nav nav "
+      "aside section "
+      "footer footer ";
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "nav"
+      "aside"
+      "section"
+      "footer";
+  }
+  aside ul {
+    display: flex;
+    gap: 10px;
+  }
+  aside {
+    overflow-x: auto;
+  }
+}

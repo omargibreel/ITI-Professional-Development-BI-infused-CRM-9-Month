@@ -1,0 +1,13 @@
+/////////////////////////////////////////////
+//Lab Assignments
+//1- pointer to integer  read & write
+//2- pointer to array  read and write   3 ways
+//3- pointer to pointer of integer Write ONLY
+//4- pass by value/address    swap
+//5- pass array as input param []   ,pass pointer
+//6- return [] as return type[not supported][compiler error]
+    //and return pointer as a return type
+
+//7- pointer to struct of employee   ->
+
+//8- fname, lname -> fullname

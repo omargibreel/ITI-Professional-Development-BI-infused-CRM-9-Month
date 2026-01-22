@@ -1,0 +1,7 @@
+//Lab Assigments:
+//[discuss] early vs late binding Base,Derived,Derived2 
+//1-Geoshape abstract
+////SumOFAreasV1()
+////SumOFAreasV2()
+
+//2- abajora via picture {shape** sptr}

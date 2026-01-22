@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-10 font-sans">
+    <div class="space-y-4">
+      <p>
+        Enter your name: <input type="text" id="nameInp" class="border ml-2" />
+      </p>
+      <p>
+        Enter your age: <input type="text" id="ageInp" class="border ml-3" />
+      </p>
+
+      <p class="font-bold">Select your Gender:</p>
+      <div class="flex gap-4">
+        <label>
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <input type="radio" name="gen" value="male" checked class="ml-14" />
+        </label>
+        <label>
+          <img
+            src="data:image/png;base64,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"
+            alt=""
+          />
+          <input type="radio" name="gen" value="female" class="ml-14" />
+        </label>
+      </div>
+
+      <p>
+        Select your favorite color:
+        <select id="colorInp" class="border">
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="blue">blue</option>
+          <option value="yellow">yellow</option>
+        </select>
+      </p>
+
+      <button
+        onclick="register()"
+        class="border px-4 py-1 bg-gray-100 hover:bg-gray-200"
+      >
+        register
+      </button>
+    </div>
+
+    <script src="cookie.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

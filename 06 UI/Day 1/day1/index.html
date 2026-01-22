@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      th {
+        border: 2px solid black;
+        width: 180px;
+        height: 60px;
+      }
+      thead tr th {
+        background-color: rgb(78, 114, 150);
+      }
+      tbody tr {
+        background-color: lightgray;
+        height: 50px;
+      }
+      tbody tr td {
+        padding-left: 20px;
+      }
+      .sh3poly {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>25</td>
+          <td rowspan="2">merged Rows</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">Merged Column</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>30</td>
+          <td>
+            <table border="2px solid " style="text-align: center; margin: auto">
+              <tr style="background-color: yellow; height: 30px">
+                <td>Nested Table</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr class="sh3poly">
+          <td>John Doe</td>
+          <td>25</td>
+          <td style="text-align: right">
+            this is some long text that will not wrap
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
